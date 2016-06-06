@@ -1,0 +1,17 @@
+<div ng-app="app" ng-controller="articlesController" class="container col-sm-9">	
+	<h1>Создать статью</h1>
+	<form action="" role="form">
+		<div class="dropdown" uib-dropdown dropdown-append-to-body>
+			<button  class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" uib-dropdown-toggle>Выбрать категорию
+				<span class="caret"></span>
+			</button> 
+			<ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+				<li role="menuitem" ng-repeat="item in categories">
+					<a href="#">{{ item }}</a>
+				</li>
+			</ul>
+		</div>
+		<textarea name="article" id="" class="col-sm-12" rows="10"></textarea>
+		<button type="submit" class="btn-success">Добавить статью</button>
+	</form>
+</div>

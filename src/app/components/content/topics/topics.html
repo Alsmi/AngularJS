@@ -1,0 +1,12 @@
+<div ng-app="app" ng-controller="topicsController" class="container col-sm-9" >		
+	<h1>Список категорий</h1>
+	<form action="" role="form">
+		<input ng-model="inputVal" type="text">
+		<button ng-click="AddTopic()" type="submit" class="btn-success">Добавить категорию</button>
+	</form>
+	<ul class="list-group">
+		<li class="list-group-item" ng-repeat="item in categories">
+			<a href="">{{ item }}</a>
+	  	</li>
+	</ul>
+</div>
